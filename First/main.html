@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<meta name="keywords" content="some different keywords">
+	<meta name="description" content="Web page" />
+	<meta name="robots" content="index/follow" />
+	<meta name="author" content="Sviatoslav Palchak" />
+</head>
+
+<body>
+	<p id="p1"><b>Hello</b> world!</p>
+	<script>
+		let p = document.getElementById('p1');
+		let range1 = document.createRange();
+		range1.selectNode(p);
+		console.log(range1.selectNode(p));
+		let range2 = document.createRange();
+		range2.selectNodeContents(p);
+		console.log(range2.selectNodeContents(p))
+	</script>
+</body>
+
+</html>
